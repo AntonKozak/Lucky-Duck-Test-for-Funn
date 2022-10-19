@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    width: fit-content;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    background-image: url(./images/woodwall.jpg);
+}
+
+.headerContent {
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 5vw;
+    padding: 5px 25px;
+    display: flex;
+    background-color: #f7f7f7;
+    color: #333333;
+    height: 15vh;
+    width: 100vw;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.701);
+}
+.headerContent img{
+    width: 14vh;
+    aspect-ratio: 1;
+}
+.headerContent h1{
+    font-size: 60px;
+    margin-right: auto;
+    padding-left: 100px;
+    font-weight: 500;
+}
+.navBar{
+    background-color: #565656;
+    width: 25vw;
+    margin: 0; 
+    padding: 0;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid rgba(128, 128, 128, 0.701);
+}
+
+.navBar li {
+    list-style: none;
+}
+.navBar button {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    height: 6vh;
+    background-color: #f7f7f7;
+    border:none;
+    border-bottom: 1px solid #777777bb;
+    cursor: pointer;
+    color: #4b4b4b;
+    transition: 200ms ease-in-out;
+}
+
+.navBar select {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    height: 6vh;
+    background-color: #f7f7f7;
+    border:none;
+    border-bottom: 1px solid #777777bb;
+    cursor: pointer;
+    color: #4b4b4b;
+    transition: 200ms ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none
+}
+.navBar option{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+}
+.cardsContainer {
+    padding: 10px;
+    width: 100%;
+    min-height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.card img {
+    width: 100%;
+    height: 100%;
+    max-height: 150px;
+    margin-bottom: 5px;
+    object-fit: cover;
+    border: 1px solid #777777bb;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+.card {
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #777777bb;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    color: #333333;
+}
+
+.detailsBtn {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #777777bb;
+    color: #333333;
+}
+
+/*========== PUPUP ==========*/
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #f7f7f7;
+    width: 400px;
+    border: 1px solid grey;
+    padding: 0 10px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.openPopup {
+    visibility: visible;
+}
+
+.popupTitle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    width: 100%;
+    margin: 0;
+}
+
+.popupTitle p {
+    color: crimson;
+}
+.popupTitle button{
+    margin-left: auto;
+}
+
+.popupBody p {
+    margin: 5px;
+}
+
+.popupBody img {
+    max-width: 100%;
+    max-height: auto;
+    border: 1px solid #777777bb;
+}
+.popupPrice{
+    margin: 0 10px;
+}
+.popupHeader{
+    font-size: 1em;
+    color: #333333;
+}
+.closeBtn {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    background: none;
+    width: fit-content;
+}
+@media screen and (max-width: 1000px)  {
+    .navBar{
+        width: 35vw;
+        height: auto;
+        min-height: 85vh;
+    }
+    .navBar button, .navBar select{
+        height: 4vh;
+    }
+    .cardsContainer{
+        justify-content: space-around;
+        align-content: flex-start;
+    }
+  }
+.offer__action{display:flex;align-items:center;justify-content:flex-end}
+.offer{padding:70px 0 100px 0;position:relative}
+.modal{position:fixed;top:0;left:0;z-index:1050;display:none;width:100%;height:100%;overflow:hidden;background-color:rgba(0,0,0,.5)}
+.modal__dialog{max-width:500px;margin:40px auto}
+.modal__content{position:relative;width:100%;padding:40px;background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:4px;max-height:80vh;overflow-y:auto}
+.modal__close{position:absolute;top:8px;right:14px;font-size:30px;color:#000;opacity:.5;font-weight:700;border:none;background-color:transparent;cursor:pointer}
+.modal__title{text-align:center;font-size:22px;text-transform:uppercase}
+.modal__input{display:block;margin:20px auto 20px auto;width:280px;height:50px;background:#fff;box-shadow:0 4px 15px rgba(0,0,0,.2);border:none;font-size:18px;text-align:center;padding:0 20px;outline:0}
+.btn{display:block;width:280px;margin:0 auto}
+.btn{width:220px;height:65px;display:flex;justify-content:center;align-items:center;background-color:#fff;font-size:18px;font-weight:700;border:1px solid rgba(0,0,0,.2);box-shadow:0 4px 15px rgba(0,0,0,.2);cursor:pointer;transition:.3s all;outline:0}
+.btn_dark{background-color:#303030;color:#fff;border:none}
+
+.btn:hover{box-shadow:0 4px 30px rgba(0,0,0,.3)}
+
+.show{display: block;}
+.hide{display: none;}
+.fade{animation-name:fade;animation-duration: 1.5s;}@keyframes 
+fade{from{opacity: 0.1;}to{opacity: 1;}}
+
+
+

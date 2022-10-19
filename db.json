@@ -1,0 +1,70 @@
+{
+   "recipes":[
+       {
+          "title":"*HUSETS SCHNITZEL",
+          "meat":false,
+          "vegetarian":true,
+          "alergy":"none",
+          "price":175,
+          "image":"./images/food.jpeg",
+          "description":"Lorem ipsum dolor sit, am"
+       },
+       {
+          "title":"FISH'N CHIPS",
+          "meat":true,
+          "vegetarian":false,
+          "alergy":"none",
+          "price":149,
+          "image":"./images/asparagus.jpeg",
+          "description":"Lorem ipsum dolor "
+       },
+       {
+          "title":"Potatis",
+          "meat":false,
+          "vegetarian":true,
+          "alergy":"laktos",
+          "price":80,
+          "image":"./images/bar.jpeg",
+          "description":"Lorem ipsum dolor "
+       },
+       {
+          "title":"KRÄMIG KYCKLINGPASTA",
+          "meat":true,
+          "vegetarian":false,
+          "alergy":"none",
+          "price":169,
+          "image":"./images/bar.jpeg",
+          "description":"Lorem ipsum dolor sit,"
+       },
+       {
+          "title":"BIFF RYDBERG",
+          "meat":true,
+          "vegetarian":false,
+          "alergy":"none",
+          "price":175,
+          "image":"./images/egg.jpeg",
+          "description":"Lorem ipsum dolor sit, am"
+       },
+       {
+          "title":"Hamburgare",
+          "meat":true,
+          "vegetarian":false,
+          "alergy":"gluten",
+          "price":50,
+          "image":"./images/food.jpeg",
+          "description":"Lorem ipsum dolor sit, am"
+       },
+       {
+          "title":"MUSSLOR AL CAVA",
+          "meat":false,
+          "vegetarian":true,
+          "alergy":"none",
+          "price":109,
+          "image":"./images/asparagus.jpeg",
+          "description":"Lorem ipsum dolor sit"
+       }
+    ],
+    "requests": [
+        
+    ]
+ }

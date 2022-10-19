@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Meny</title>
+</head>
+
+<body>
+    <header>
+        <div class="headerContent flex">
+            <img src="./images//lucky_duck.png" alt="">
+            <h1>Lucky Duck</h1>
+        </div>
+
+    </header>
+    <div class="container">
+        <nav class="navBar">
+            <ul class="flex">
+                <li><button id="meatBtn" onclick="showMeat()">Kött</button></li>
+                <li><button id="vegetarianBtn" onclick="showVegetarian()">Vegetarisk</button></li>
+                <li><select id="allergyBtn" onchange="removeAllergic()">
+                        <option value="none">Allergi</option>
+                        <option value="laktos">Laktos</option>
+                        <option value="gluten">Gluten</option>
+                        <option value="inga">Inga</option>
+                    </select></li>
+                <li><select id="prisordningBtn" onchange="prisordning()">
+                        <option value="none">Prisordning</option>
+                        <option id="stigandeBtn" value="stigande">Stigande</option>
+                        <option value="fallande">Fallande</option>
+                    </select></li>
+            </ul>
+        </nav>
+        <div class="cardsContainer">
+
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popupTitle">
+                <h2 class="popupHeader"></h2>
+                <p class="popupPrice"></p>
+                <button class="closeBtn" type="button" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popupBody">
+                <img class="popupImg" src="./images/food.jpeg" alt="">
+                <p class="popupText"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- buttom to call form -->
+    <div class="offer">
+    <div class="offer__action">
+        <button class="btn btn_dark" data-modal>Add ny dish</button>
+    </div>
+    </div>
+
+
+<!-- * Forms to get data * -->
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">Add ny dish!</div>
+                    <input required placeholder="Dish name" name="name" type="text" class="modal__input"> 
+                    <input required placeholder="It's meat?" name="meat" type="boolean" class="modal__input">
+                    <input required placeholder="Vegetarian?" name="vegetarian" type="boolean" class="modal__input">
+                    <input required placeholder="Which alergy?" name="alergy" type="text" class="modal__input">
+                    <input required placeholder="How much woud you like to pay for it?" name="price" type="number" class="modal__input">
+                    <input required placeholder="Image if you have?" name="image" type="img" class="modal__input">
+                    <input required placeholder="Description?" name="description" type="text" class="modal__input">
+                    <button class="btn btn_dark btn_min">Send to Lucky Duck</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./popup.js"></script>
+    <script src="./main.js"></script>
+    <script src="./navbar_functions.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
